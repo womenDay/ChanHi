@@ -19,7 +19,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 	</head>
 	<body class="demo-1 loading">
 		<main>
-			<div class="message">Please view this demo on a desktop to see the effect.</div>
+			<div class="message">Vui Lòng Xem Trên LapTop ạ </div>
 			<div class="frame">
 			</div>
 			<div class="content">
@@ -52,13 +52,17 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
 		</svg>
 
-		<audio id="autoplay" controls>
-  <source src="./love.mp3">
+
+<audio id="myAudio" controls autoplay>
+  <source src="./love.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-	document.getElementById('autoplay').play();
+  var audio = document.getElementById("myAudio");
+  audio.play();
+
 </script>
+
 		<script src="./script.js"></script>
 	</body>
 </html>
