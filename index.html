@@ -53,11 +53,22 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		</svg>
 
 
-	<iframe src="./love.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-<audio autoplay>
-    <source src="./love.mp3" type="audio/mp3">
+	<audio id="divAudio">
+   <source src="./love.mp3" type="audio/mp3">
 </audio>
 
+<script>
+   var vAudio = document.getElementById("divAudio");
+   var hasInit = false;
+   function playMusic()
+   {
+      if(!hasInit)
+      {
+          hasInit = true;
+          vAudio.play();
+      }
+   }
+</script>
 		<script src="./script.js"></script>
 	</body>
 </html>
