@@ -51,9 +51,14 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
         <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
 			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
 		</svg>
-		<audio autoplay>
-        <source src="./love.mp3">
-    </audio>
+
+		<audio id="autoplay" controls>
+  <source src="./love.mp3">
+</audio>
+
+<script>
+	document.getElementById('autoplay').play();
+</script>
 		<script src="./script.js"></script>
 	</body>
 </html>
