@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi" class="no-js">
 	<head>
-		<script>
-window.onload = function() {
-  var context = new AudioContext();
-}
-</script>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Chúc mừng ChanHi 20/10</title>
@@ -58,8 +53,9 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		</svg>
 
 
-		<audio autoplay>
-      <source src="./love.mp3">
+	<iframe src="./love.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio autoplay>
+    <source src="./love.mp3" type="audio/mp3">
 </audio>
 
 		<script src="./script.js"></script>
